@@ -29,6 +29,7 @@ document.addEventListener('dblclick', function (e) {
                 if (documentElement.scrollTop + window.innerHeight >= documentElement.scrollHeight) {
                     clearInterval(scrollInterval);
                     scrollInterval = null;
+                    scrollSpeed = 0;
                 }
             }, 60);
         }
